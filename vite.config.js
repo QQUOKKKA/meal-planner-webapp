@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  build: {
+    outDir: 'dist', // 반드시 dist로 설정 (Vercel에서 찾는 폴더)
+  },
+  server: {
+    open: true,
+  },
+});
