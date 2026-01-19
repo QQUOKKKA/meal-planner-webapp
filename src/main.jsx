@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import MealPlanner from "./components/MealPlanner"; // 새 컴포넌트 import
-import "./index.css";
+import App from "./App.jsx";
+import "./styles/MealPlanner.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <MealPlanner />  {/* 여기서 컴포넌트 렌더링 */}
+    <App />
   </React.StrictMode>
 );
